@@ -3,7 +3,7 @@ FROM alpine:3.13
 LABEL Maintainer="Bhaskar KC <xlinkerz@gmail.com>"
 LABEL Description="Alipne linux based openconnect."
 
-RUN apk --no-cache add bash openconnect openssl
+RUN apk --no-cache add bash openconnect openssl openssh
 
 COPY scripts/entrypoint.sh /tmp/
 
