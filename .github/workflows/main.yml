@@ -15,3 +15,6 @@ jobs:
           USER: ${{ secrets.GB_USER }}
           PASS: ${{ secrets.GB_PASSWORD }}
           SERVER: ${{ secrets.GB_SERVER }}
+        run: |
+          ssh romain@kaiju.anu.edu.au
+          
